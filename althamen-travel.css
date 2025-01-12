@@ -1081,6 +1081,10 @@ footer * {
     max-height: 70vh;
     margin-bottom: 20px;
   }
+
+  .whatsapp_button {
+    margin-top: 20px;
+  }
 }
 
 
