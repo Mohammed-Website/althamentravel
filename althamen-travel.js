@@ -32,17 +32,17 @@ const header = document.getElementById('mughader_header');
 let lastScrollPosition = 0;
 
 window.addEventListener('scroll', () => {
-  const currentScrollPosition = window.scrollY;
+    const currentScrollPosition = window.scrollY;
 
-  if (currentScrollPosition > lastScrollPosition) {
-    // Scrolling down
-    header.classList.add('hidden');
-  } else {
-    // Scrolling up
-    header.classList.remove('hidden');
-  }
+    if (currentScrollPosition > lastScrollPosition) {
+        // Scrolling down
+        header.classList.add('hidden');
+    } else {
+        // Scrolling up
+        header.classList.remove('hidden');
+    }
 
-  lastScrollPosition = currentScrollPosition;
+    lastScrollPosition = currentScrollPosition;
 });
 
 
@@ -357,7 +357,7 @@ const sectionData = [
                 'عروض-شركة-الثامن/عروض-مشهد-1/عرض-مشهد-1-تفاصيل-2.jpg',
                 'عروض-شركة-الثامن/عروض-مشهد-1/عرض-مشهد-1-تفاصيل-3.jpg',
             ],
-            text: 'عرض مشهد - بشرى - مدينة الرضا - هاني باريس',
+            text: 'عرض مشهد - فندق شكوه',
         },
 
         main_image_2: {
@@ -367,7 +367,7 @@ const sectionData = [
                 'عروض-شركة-الثامن/عروض-مشهد-2/عرض-مشهد-2-تفاصيل-2.jpg',
                 'عروض-شركة-الثامن/عروض-مشهد-2/عرض-مشهد-2-تفاصيل-3.jpg',
             ],
-            text: 'عرض مشهد - حيات شرق - طهران - جوار الملك',
+            text: 'عرض مشهد - فندق برج أراد',
         },
 
         main_image_3: {
@@ -377,7 +377,7 @@ const sectionData = [
                 'عروض-شركة-الثامن/عروض-مشهد-3/عرض-مشهد-3-تفاصيل-2.jpg',
                 'عروض-شركة-الثامن/عروض-مشهد-3/عرض-مشهد-3-تفاصيل-3.jpg',
             ],
-            text: 'عرض مشهد - سايه - الماسا - أطلس',
+            text: 'عرض مشهد - فندق الغدير',
         },
     },
 
@@ -385,12 +385,16 @@ const sectionData = [
         title: 'عروض اذربيجان',
         main_image_1: {
             mainSrc: 'عروض-شركة-الثامن/عروض-اذربيجان-1/عرض-اذربيجان-1.jpg',
-            text: 'عرض سوتشي - روسيا',
+            subImages: [
+            ],
+            text: 'عرض اذربيجان - 8 أيام',
         },
 
         main_image_2: {
             mainSrc: 'عروض-شركة-الثامن/عروض-اذربيجان-2/عرض-اذربيجان-2.jpg',
-            text: 'عرض سوتشي - روسيا',
+            subImages: [
+            ],
+            text: 'عرض اذربيجان - باكو & قبالا',
         },
     },
 
@@ -398,12 +402,16 @@ const sectionData = [
         title: 'عروض اسطنبول',
         main_image_1: {
             mainSrc: 'عروض-شركة-الثامن/عروض-اسطنبول-1/عرض-اسطنبول-1.jpg',
-            text: 'عرض خاص طرابزون - 8 أيام',
+            subImages: [
+            ],
+            text: 'بورصا & سبانجا & البوسقور & بكركوي & ارتكوي & توزلا',
         },
 
         main_image_2: {
             mainSrc: 'عروض-شركة-الثامن/عروض-اسطنبول-2/عرض-اسطنبول-2.jpg',
-            text: 'عرض خاص طرابزون - 8 أيام',
+            subImages: [
+            ],
+            text: 'بورصا & سبانجا & البوسقور & بكركوي & ارتكوي & توزلا',
         },
     },
 
@@ -411,7 +419,9 @@ const sectionData = [
         title: 'عروض سريلانكا',
         main_image_1: {
             mainSrc: 'عروض-شركة-الثامن/عروض-سريلانكا-1/عرض-سريلانكا-1.jpg',
-            text: 'عرض اسطنبول - 8 أيام',
+            subImages: [
+            ],
+            text: 'كولمبور & كاندي & نوراليا & بنتوتا',
         },
     },
 
@@ -419,12 +429,16 @@ const sectionData = [
         title: 'عروض سوتشي',
         main_image_1: {
             mainSrc: 'عروض-شركة-الثامن/عروض-سوتشي-1/عرض-سوتشي-1.jpg',
-            text: 'عرض اسطنبول - 8 أيام',
+            subImages: [
+            ],
+            text: 'عرض سوتشي الجميلة - 8 أيام',
         },
 
         main_image_2: {
             mainSrc: 'عروض-شركة-الثامن/عروض-سوتشي-2/عرض-سوتشي-2.jpg',
-            text: 'عرض اسطنبول - 8 أيام',
+            subImages: [
+            ],
+            text: 'عرض سوتشي الجميلة - 8 أيام',
         },
     },
 
@@ -432,17 +446,23 @@ const sectionData = [
         title: 'عروض طرابزون',
         main_image_1: {
             mainSrc: 'عروض-شركة-الثامن/عروض-طرابزون-1/عرض-طرابزون-1.jpg',
-            text: 'عرض اسطنبول - 8 أيام',
+            subImages: [
+            ],
+            text: 'آيدر & زيجانا & همسكوي & اوزنجول & بورصا & اسطنبول',
         },
 
         main_image_2: {
             mainSrc: 'عروض-شركة-الثامن/عروض-طرابزون-2/عرض-طرابزون-2.jpg',
-            text: 'عرض اسطنبول - 8 أيام',
+            subImages: [
+            ],
+            text: 'آيدر & زيجانا & همسكوي & اوزنجول',
         },
 
         main_image_3: {
             mainSrc: 'عروض-شركة-الثامن/عروض-طرابزون-3/عرض-طرابزون-3.jpg',
-            text: 'عرض اسطنبول - 8 أيام',
+            subImages: [
+            ],
+            text: 'آيدر & زيجانا & همسكوي & اوزنجول',
         },
     },
 
@@ -450,7 +470,9 @@ const sectionData = [
         title: 'عروض ايطاليا',
         main_image_1: {
             mainSrc: 'عروض-شركة-الثامن/عروض-ايطاليا-1/عرض-ايطاليا-1.jpg',
-            text: 'عرض اسطنبول - 8 أيام',
+            subImages: [
+            ],
+            text: 'ميلان & زبورخ & فرايبورغ & فرانكفورت',
         },
     },
 ];
